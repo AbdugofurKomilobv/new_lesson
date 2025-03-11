@@ -3,9 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>{{title}}</title>
 </head>
 <body>
     <h1>Nma gapo</h1>
+
+    {% for i in news%}
+     <div>
+        <p>{{i.title}}</p>
+        <p>{{i.context}}</p>
+        <p>{{i.created_ed}}</p>
+        <hr>
+     </div>
+   
+
+
+
+    {% endfor %}
 </body>
 </html>
