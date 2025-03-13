@@ -11,4 +11,9 @@ class Cars(models.Model):
 
     def __str__(self):
         return self.name
+    
+    class Meta:
+        verbose_name = "CAR"
+        verbose_name_plural = "CARS"
+        ordering = ['created_ed']
 
